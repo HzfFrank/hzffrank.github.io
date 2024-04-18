@@ -1,3 +1,3 @@
 # homepage
 
-You can visit <a href="https://hzffrank.github.io/homepage/">my homepage</a>.
+You can visit <a href="https://hzffrank.github.io">my homepage</a>.
