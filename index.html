@@ -158,8 +158,35 @@
               <a href="https://sites.google.com/view/diffsim/">Website</a>
               &nbsp;/&nbsp;
               <a href="https://drive.google.com/file/d/1MDgj2pXHNUO8RscIi02_tiGxpmBWIDJD/view">Video</a>
+              &nbsp;/&nbsp;
+              <head>
+              <title>展开收起文字示例</title>
+              <style>
+                /* 初始状态下隐藏展开的文字 */
+                #expandable-text {
+                  display: none;
+                }
+              </style>
+              <script>
+                function toggleText() {
+                  var expandableText = document.getElementById("expandable-text");
+                  // 切换展开的文字的显示状态
+                  expandableText.style.display = (expandableText.style.display === "none") ? "block" : "none";
+                }
+              </script>
+            </head>
+            <body>
+              <p>
+                <!-- 添加一个链接，点击链接时触发 toggleText 函数来展开或收起文字 -->
+                <a href="javascript:void(0);" onclick="toggleText()">Abstract</a>
+              </p>
+              <!-- 展开的文字部分 -->
+              <div id="expandable-text">
+                <font color='gray'>We present Jade, a differentiable physics engine for articulated rigid bodies. Jade models contacts as the Linear Complementarity Problem (LCP). Compared to existing differentiable simulations, Jade offers features including intersection-free collision simulation and stable LCP solutions for multiple frictional contacts. We use continuous collision detection to detect the time of impact and adopt the backtracking strategy to prevent intersection between bodies with complex geometry shapes. We derive the gradient calculation to ensure the whole simulation process is differentiable under the backtracking mechanism. We modify the popular Dantzig algorithm to get valid solutions under multiple frictional contacts. We conduct extensive experiments to demonstrate the effectiveness of our differentiable physics simulation over a variety of contact-rich tasks.</font>
+              </div>
+            </body>
               <br>
-              <font color='gray'>We present Jade, a differentiable physics engine for articulated rigid bodies. Jade models contacts as the Linear Complementarity Problem (LCP). Compared to existing differentiable simulations, Jade offers features including intersection-free collision simulation and stable LCP solutions for multiple frictional contacts. We use continuous collision detection to detect the time of impact and adopt the backtracking strategy to prevent intersection between bodies with complex geometry shapes. We derive the gradient calculation to ensure the whole simulation process is differentiable under the backtracking mechanism. We modify the popular Dantzig algorithm to get valid solutions under multiple frictional contacts. We conduct extensive experiments to demonstrate the effectiveness of our differentiable physics simulation over a variety of contact-rich tasks.</font>
+              <!-- <font color='gray'>We present Jade, a differentiable physics engine for articulated rigid bodies. Jade models contacts as the Linear Complementarity Problem (LCP). Compared to existing differentiable simulations, Jade offers features including intersection-free collision simulation and stable LCP solutions for multiple frictional contacts. We use continuous collision detection to detect the time of impact and adopt the backtracking strategy to prevent intersection between bodies with complex geometry shapes. We derive the gradient calculation to ensure the whole simulation process is differentiable under the backtracking mechanism. We modify the popular Dantzig algorithm to get valid solutions under multiple frictional contacts. We conduct extensive experiments to demonstrate the effectiveness of our differentiable physics simulation over a variety of contact-rich tasks.</font>-->
               <br>
               <b>I participated in part of the experimental work of the paper, mainly responsible for training the reinforcement learning algorithm to solve the LCP, but I did not signature.</b>
             </td>
