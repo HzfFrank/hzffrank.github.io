@@ -128,14 +128,17 @@
               <style>
                 /* 初始状态下隐藏展开的文字 */
                 #EMPOexpandable-text {
-                  display: block;
+                  display: none;
                 }
               </style>
               <script>
+                var EMPOisExpanded = false; // 初始状态为未展开
                 function EMPOtoggleText() {
                   var expandableText = document.getElementById("EMPOexpandable-text");
+                  // 切换展开状态
+                  EMPOisExpanded = !EMPOisExpanded;
                   // 切换展开的文字的显示状态
-                  expandableText.style.display = (expandableText.style.display === "none") ? "block" : "none";
+                  expandableText.style.display = EMPOisExpanded ? "block" : "none";
                 }
               </script>
               </head>
@@ -181,14 +184,17 @@
               <style>
                 /* 初始状态下隐藏展开的文字 */
                 #JADEexpandable-text {
-                  display: block;
+                  display: none;
                 }
               </style>
               <script>
+                var JADEisExpanded = false; // 初始状态为未展开
                 function JADEtoggleText() {
-                  var expandableText = document.getElementById("JADEexpandable-text");
+                  var expandableText = document.getElementById("JADEexpandable-text");                  
+                  // 切换展开状态
+                  JADEisExpanded = !JADEisExpanded;
                   // 切换展开的文字的显示状态
-                  expandableText.style.display = (expandableText.style.display === "none") ? "block" : "none";
+                  expandableText.style.display = JADEisExpanded ? "block" : "none";
                 }
               </script>
               </head>
