@@ -123,24 +123,19 @@
               <br>
               Ruifeng Cheng<sup>∗</sup>, Chengxing Jia<sup>∗</sup>, <b>Zefang Huang</b>, Tian-Shuo Liu, Xu-Hui Liu, Yang Yu
               <br>
-              In submission
-              <br>
               <em>The International Conference on Machine Learning (ICML)</em>, &nbsp;2024&nbsp;
               <head>
               <title>EMPO-AB</title>
               <style>
-                /* 初始状态下隐藏展开的文字 */
                 #EMPOexpandable-text {
                   display: none;
                 }
               </style>
               <script>
-                var EMPOisExpanded = false; // 初始状态为未展开
+                var EMPOisExpanded = false;
                 function EMPOtoggleText() {
                   var expandableText = document.getElementById("EMPOexpandable-text");
-                  // 切换展开状态
                   EMPOisExpanded = !EMPOisExpanded;
-                  // 切换展开的文字的显示状态
                   expandableText.style.display = EMPOisExpanded ? "block" : "none";
                 }
               </script>
@@ -149,12 +144,8 @@
                 <p>
                   Paper (Coming Soon)
                   &nbsp;/&nbsp;
-                  Code (Coming Soon)
-                  &nbsp;/&nbsp;
-                  <!-- 添加一个链接，点击链接时触发 toggleText 函数来展开或收起文字 -->
                   <a href="javascript:void(0);" onclick="EMPOtoggleText()">Abstract</a>
                 </p>
-                <!-- 展开的文字部分 -->
                 <div id="EMPOexpandable-text">
                   <font color='gray'>Learning a high-quality transition model is of great importance for sequential decision-making tasks, especially in offline settings. Nevertheless, the complex behaviors of transition dynamics in real-world environments pose challenges for the standard forward models because of their inductive bias towards smooth regressors, conflicting with the inherent nature of transitions such as discontinuity or large curvature. In this work, we propose to model the transition probability implicitly through a scalar-value energy function, which enables not only flexible distribution prediction but also capturing complex transition behaviors. The Energy-based Transition Models (ETM) are shown to accurately fit the discontinuous transition functions and better generalize to out-of-distribution transition data. Furthermore, we demonstrate that energy-based transition models improve the evaluation accuracy and significantly outperform other off-policy evaluation methods in DOPE benchmark. Finally, we show that energy-based transition models also benefit reinforcement learning and outperform prior offline RL algorithms in D4RL Gym-Mujoco tasks.</font>
                 </div>
