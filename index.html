@@ -117,6 +117,47 @@
               <img src="image/ActorCriticArchOffpolicy.jpg" style="width:100%;">
             </td>
             <td style="padding:0px 20px 20px 20px;width:70%;vertical-align:middle;">
+                <papertitle>Denoising-based Contractive Imitation Learning</papertitle>
+              <br>
+              Macheng Shen, Jishen Peng, <b>Zefang Huang</b>
+              <br>
+              <em>The International Conference on Machine Learning (ICML)</em>, &nbsp;2025&nbsp;
+              <head>
+              <title>DeCIL</title>
+              <style>
+                #DeCILexpandable-text {
+                  display: none;
+                }
+              </style>
+              <script>
+                var DeCILisExpanded = false;
+                function DeCILtoggleText() {
+                  var expandableText = document.getElementById("DeCILexpandable-text");
+                  DeCILisExpanded = !DeCILisExpanded;
+                  expandableText.style.display = DeCILisExpanded ? "block" : "none";
+                }
+              </script>
+              </head>
+              <body>
+                <p>
+                  Paper (coming soon)
+                  &nbsp;/&nbsp;
+                  <a href="javascript:void(0);" onclick="DeCILtoggleText()">Abstract</a>
+                </p>
+                <div id="DeCILexpandable-text">
+                  <font color='gray'>A fundamental challenge in imitation learning is the covariate shift problem. Existing methods to mitigate covariate shift often require additional expert interactions, access to environment dynamics, or complex adversarial training, which may not be practical in real-world applications. In this paper, we propose a simple yet effective method (DeCIL) to mitigate covariate shift by incorporating a denoising mechanism that enhances the contraction properties of the state transition mapping. Our approach involves training two neural networks: a dynamics model ( f ) that predicts the next state from the current state, and a joint state-action denoising policy network ( d ) that refines this state prediction via denoising and outputs the corresponding action. We provide theoretical analysis showing that the denoising network acts as a local contraction mapping, reducing the error propagation of the state transition and improving stability. Our method is straightforward to implement and can be easily integrated with existing imitation learning frameworks without requiring additional expert data or complex modifications to the training procedure. Empirical results demonstrate that our approach effectively improves success rate of various imitation learning tasks under noise perturbation.</font>
+                </div>
+              </body>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="width:30%;padding-right:20px;">
+              <img src="image/ActorCriticArchOffpolicy.jpg" style="width:100%;">
+            </td>
+            <td style="padding:0px 20px 20px 20px;width:70%;vertical-align:middle;">
               <a href="https://arxiv.org/abs/2405.15384">
                 <papertitle>Efficient Recurrent Off-Policy RL with Varied-Learning-Rate State Space Models</papertitle>
               </a>
@@ -143,6 +184,8 @@
               <body>
                 <p>
                   <a href="https://arxiv.org/abs/2405.15384">Paper</a>
+                  &nbsp;/&nbsp;
+                  <a href="https://github.com/FanmingL/Recurrent-Offpolicy-RL">Code</a>
                   &nbsp;/&nbsp;
                   <a href="javascript:void(0);" onclick="RESeLtoggleText()">Abstract</a>
                 </p>
@@ -187,7 +230,7 @@
                 <p>
                   <a href="https://openreview.net/pdf?id=dqpg8jdA2w">Paper</a>
                   &nbsp;/&nbsp;
-                  <a href="https://github.com/FanmingL/Recurrent-Offpolicy-RL">Code</a>
+                  <a href="https://github.com/Ruifeng-Chen/Energy-Transition-Models">Code</a>
                   &nbsp;/&nbsp;
                   <a href="javascript:void(0);" onclick="EMPOtoggleText()">Abstract</a>
                 </p>
